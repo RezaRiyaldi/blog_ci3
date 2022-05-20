@@ -1,4 +1,5 @@
 <h2 class="text-center my-4">Author Management</h2>
+<a href="<?= base_url() ?>account/add" class="btn btn-success mb-3">Add Author</a>
 <table class="table table-bordered table-hover">
 	<tr class="text-center">
 		<th>No</th>

@@ -11,7 +11,7 @@
 					<h5 class="text-center mb-0"><a href="<?= base_url() ?><?= $post->idpost ?>/post" class="text-decoration-none text-primary"><?= $post->title ?></a></h5>
 				</div>
 				<div class="card-body">
-					<p><?= substr($post->content, 0, 20) ?><a href="<?= base_url() ?><?= $post->idpost ?>/post">..learn more</a></p>
+					<p><?= substr($post->content, 0, 50) ?><a href="<?= base_url() ?><?= $post->idpost ?>/post">..learn more</a></p>
 				</div>
 				<div class="card-footer">
 					<p class="text-muted mb-0"><?= $post->date ?></p>
