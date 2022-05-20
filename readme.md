@@ -19,13 +19,6 @@
 
 ![admin](screenshot/ss-admin.png)
 
-- Halaman Author
-  > Terdapat perbedaan pada sidebar antara admin dan author.
-  - username: `author`
-  - password: `author`
-
-![author](screenshot/ss-author.png)
-
 - Halaman Add Account
 
 ![add_account](screenshot/ss-add-account.png)
@@ -34,6 +27,13 @@
 > Hanya account dengan role author yang terdapat pada halaman ini.
 
 ![author manage](screenshot/ss-author-manage.png)
+
+- Halaman Author
+  > Terdapat perbedaan pada sidebar antara admin dan author.
+  - username: `author`
+  - password: `author`
+
+![author](screenshot/ss-author.png)
 
 - Halaman Add Post
 
