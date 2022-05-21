@@ -12,7 +12,7 @@
 	?>
 		<tr>
 			<td class="text-center"><?= $no++ ?></td>
-			<td><?= $post->title ?></td>
+			<td><a href="<?= base_url($post->idpost) ?>/post"><?= $post->title ?></a></td>
 			<td><?= substr($post->content, 0, 30) ?></td>
 			<td class="text-center">
 				<a href="<?= base_url($post->idpost)  ?>/post/edit" class="btn btn-warning"" class="btn btn-warning">Edit</a>

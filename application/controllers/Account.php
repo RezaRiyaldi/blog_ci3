@@ -13,6 +13,9 @@ class Account extends CI_Controller
 
 	public function v_login()
 	{
+		if ($this->session->name != '') {
+			redirect('/');
+		}
 		$data = [
 			'login' => TRUE,
 			'title' => 'Login',
@@ -31,8 +34,10 @@ class Account extends CI_Controller
 			'role' => ''
 		];
 
-		$this->session->unset_userdata($data);
-		$this->session->sess_destroy();
+		$this->session->set_userdata($data);
+		// $this->session->sess_destroy();
+
+		$this->session->set_flashdata('success', 'Successfully logout, happy a nice day:D');
 
 		redirect('/');
 	}

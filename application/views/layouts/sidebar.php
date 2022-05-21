@@ -1,6 +1,6 @@
 <!-- Page content wrapper-->
 <div class="border-end bg-white" id="sidebar-wrapper">
-	<div class="sidebar-heading border-bottom bg-light"><?= $this->session->name != '' ? $this->session->name : 'Blog' ?></div>
+	<div class="sidebar-heading border-bottom bg-light"><?= $this->session->name != '' ? "Welcome " . $this->session->name : 'Blog' ?></div>
 	<div class="list-group list-group-flush">
 		<a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?= base_url() ?>">Home</a>
 		<?php

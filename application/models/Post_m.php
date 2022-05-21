@@ -24,7 +24,7 @@ class Post_m extends CI_Model {
 		
 		$data = [
 			'title' => ucwords(strtolower($input->title)),
-			'content' => $input->content,
+			'content' => ucfirst($input->content),
 			'date' => date('Y-m-d H:i:s'),
 			'username' => $this->session->username
 		];
