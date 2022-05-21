@@ -52,6 +52,10 @@ class Account extends CI_Controller
 
 	public function v_add_account()
 	{
+		if ($this->session->name == '') {
+			redirect('login');
+		}
+
 		$data = [
 			'title' => 'Add Account',
 			'content' => 'account/v_add'
@@ -76,11 +80,15 @@ class Account extends CI_Controller
 
 		$this->session->set_flashdata($check->type_message, $check->message);
 
-		redirect('account/add');
+		redirect('account/author_manage');
 	}
 
 	public function v_author_manage()
 	{
+		if ($this->session->name == '') {
+			redirect('login');
+		}
+
 		$authors = $this->account->get_accounts();
 		$data = [
 			'title' => 'Author Management',
@@ -93,6 +101,10 @@ class Account extends CI_Controller
 
 	public function v_edit_author($username)
 	{
+		if ($this->session->name == '') {
+			redirect('login');
+		}
+
 		$author = $this->account->get_account_row($username);
 		$data = [
 			'title' => 'Edit Author',

@@ -10,7 +10,7 @@
 			</div>
 			<div class="card-footer">
 				<p class="m-0 text-muted"><?= $post->date ?></p>
-				<p class="m-0"><?= $post->username ?></p>
+				<p class="m-0">By <?= $post->username ?></p>
 			</div>
 		</div>
 	</div>
